@@ -13,6 +13,7 @@ Live multi-user Azure training tenant, Reader access
 
 <img width="1327" height="581" alt="Image" src="https://github.com/user-attachments/assets/782e4e86-7c4a-4b61-9a9b-6be23232ab70" />
 
+<img width="1190" height="550" alt="Image" src="https://github.com/user-attachments/assets/9f0c4ece-c40b-4c0f-8d9a-7b820a68d237" />
 
 2. Inspection of that resource group showed that there was a resource within the resource group.  Inspecting the group for tags, there was a tag associated which did give information for the resource owner.  With this there was now evidence of the likely resource group, resource, and owner being identified.
 
