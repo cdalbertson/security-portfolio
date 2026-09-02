@@ -11,7 +11,7 @@ Live multi-user Azure training tenant, Reader access
 ## Investigation
 1. I began by investigating the tenant resource groups to identify any which may not conform to policy naming standards or had other immediate abnormalities.  There was a resource group found on page 2 which didn't match the naming convention used on the other resource groups, which prompted scrutiny.
 
-
+<img width="1327" height="581" alt="Image" src="https://github.com/user-attachments/assets/782e4e86-7c4a-4b61-9a9b-6be23232ab70" />
 
 
 2. Inspection of that resource group showed that there was a resource within the resource group.  Inspecting the group for tags, there was a tag associated which did give information for the resource owner.  With this there was now evidence of the likely resource group, resource, and owner being identified.
