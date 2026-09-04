@@ -34,10 +34,14 @@ Live multi-user Azure training tenant, Reader access
 <img width="1186" height="535" alt="Image" src="https://github.com/user-attachments/assets/22fb665b-e633-4295-aa3f-6be397df2f77" />
 
 ## What broke / what surprised me
-Inspecting the JSON to find that it had multiple allowed values and a default that was the least restrictive was a bit surprising.  I wanted to be certain that the chain of events could be substantiated on the evidence gathered and that the details which turned my suspicions into valid affirmed my findings through each step, this took longer than I anticipated.
+Inspecting the JSON to find that it had multiple allowed values and a default that was the least restrictive was a bit surprising.  I wanted to be certain that the chain of events could be substantiated on the evidence gathered and that the details which turned my suspicions into valid findings were affirmed through each step, this took longer than I anticipated.
 
 ## Findings and recommendations
-Recommendations are as follows:Configure the failed policy to the most restrictive setting.  If this is not acceptable, then the default value should be configured to the most restrictive setting to act as another level of action required.  Enact controls and policy on users to restrict on basis of time/day to prevent issues from incurring costs over weekends.  Supplemental training of juniors and interns could act as another measure to prevent similar issues in the future.
+Recommendations are as follows:
+1. Configure the failed policy to the most restrictive setting.
+2. If this is not acceptable, then the default value should be configured to the most restrictive setting to act as another level of action required.
+3. Enact controls and policy on users to restrict on basis of time/day to prevent issues from incurring costs over weekends.
+4. Supplemental training of juniors and interns could act as another measure to prevent similar issues in the future.
 
 ## What I learned
 1. I learned that doing my attempt at as close to professional an investigation with matching soundness of reasoning and evidence is something that does force writing in a different tone and logical structure which was almost more difficult than the investigation itself  Especially when keeping in mind that reports are written for the reader, so keeping a level of ease in following should be important.
