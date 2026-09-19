@@ -3,7 +3,7 @@
 Documented cloud security investigations, built in a live Azure tenant
 (Mad Hat Labs, a multi-user training environment).
 
-Target role: SOC Analyst / Security Analyst
+Target role: SOC Analyst/Security Analyst
 Currently: Senior Project Manager | Remote
 Contact: cdalbertson@proton.me · https://www.linkedin.com/in/chris-d-albertson
 
