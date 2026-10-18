@@ -30,7 +30,7 @@ Live multi-user Azure training tenant, Reader access
 7. This prompted my inspection of the policy itself.
 <img width="1178" height="522" alt="Image" src="https://github.com/user-attachments/assets/cbe03563-a7c8-47c6-8a84-532647429013" />
 
-5. Inspection of the JSON for the policy configuration revealed that this policy has 3 values allowed and a default value of Audit.  Which confirms that this is the policy configuration value which allowed the governance failure that permitted the deployment of a non-conforming deployment.
+8. Inspection of the JSON for the policy configuration revealed that this policy has 3 values allowed and a default value of Audit.  Which confirms that this is the policy configuration value which allowed the governance failure that permitted the deployment of a non-conforming deployment.
 <img width="1186" height="535" alt="Image" src="https://github.com/user-attachments/assets/22fb665b-e633-4295-aa3f-6be397df2f77" />
 
 ## What broke / what surprised me
