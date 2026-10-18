@@ -37,7 +37,7 @@ Recommendations are as follows:
 6. Conduct employee training
 
 ## What I learned
-1. That IAM within organizations need to scheduled reviews of established users and applications to clean up old and/or unnecessary access and entitlements
+1. That IAM within organizations needs scheduled reviews of established users and applications to clean up old and/or unnecessary access and entitlements
 2. I learned how relaxed or rushed security standards on what appear to be small risks can actually carry significant impact radius by exploiting overlooked or unmanaged access.
 3. The default setting for all users being able to register an app is something that should be on any cloud security team's checklist to create and enforce policy which requires inspection and approval.
 4. Additional navigation of the Azure system
