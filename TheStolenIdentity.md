@@ -19,25 +19,25 @@ Live multi-user Azure training tenant, Reader access
 4. Persistence: Within the created app in the expose an API tab we an see a new scope was created.  The scope designates the legacy app as a secure resource enabling the rogue app to request delegated access.  This is where a deeper persistence is enabled.  The actor created a scenario where even if the employee owner entitlement was cleaned up and the new CID with excessive expiration were removed/rotated, that the actor could simply provision new credentials as needed and reinsert themselves.
 <img width="1456" height="663" alt="Image" src="https://github.com/user-attachments/assets/45f0093b-5e27-44a2-a330-2991e2c4f422" />
 
-Objective: Checking the illegitimate app we can see where the actor's intentions pointed to.  Through chaining permissions, and the new over provisioned scope, and the disguised authentication pathing through rogue app's redirect URL allowing the legacy app will allow the actor to harvest session tokens.  This is the end of what my analysis found as the threat actor's objective so far as they were able to establish themselves before their presence was identified.
+5. Objective: Checking the illegitimate app we can see where the actor's intentions pointed to.  Through chaining permissions, and the new over provisioned scope, and the disguised authentication pathing through rogue app's redirect URL allowing the legacy app will allow the actor to harvest session tokens.  This is the end of what my analysis found as the threat actor's objective so far as they were able to establish themselves before their presence was identified.
 <img width="1456" height="607" alt="Image" src="https://github.com/user-attachments/assets/69b4a025-ef8e-4ba6-9e04-9606de69aee2" />
 
 ## What broke / what surprised me
-I was surprised to learn about the carried level of entitlement through the steps of the kill chain and how that is exploitable through a basic understanding of how provisioning works within Azure.
-I did not anticipate that as a default any user can register an app.  I would have thought for certain that inherent design would necessitate establishing the highest level access and entitlements and that subsequent access would default to zero access.
-Being a new learner to cyber security it was interesting to see how redirect URI can be exploited from within a system like this and bypass the security policies on users that establish the perimeter, including MFA tokens.
+1. I was surprised to learn about the carried level of entitlement through the steps of the kill chain and how that is exploitable through a basic understanding of how provisioning works within Azure.
+2. I did not anticipate that as a default any user can register an app.  I would have thought for certain that inherent design would necessitate establishing the highest level access and entitlements and that subsequent access would default to zero access.
+3. Being a new learner to cyber security it was interesting to see how redirect URI can be exploited from within a system like this and bypass the security policies on users that establish the perimeter, including MFA tokens.
 
 ## Findings and recommendations
 Recommendations are as follows:
 1. Conduct an audit of all registered app owners and remove unnecessary entitlements/access.
 2. Remove/delete all found changes enacted by the threat actor including the following: remove any OAuth2PermissionGrant associated, remove the redirect URI, remove the custom scope, review and reduce capability for the Graph permissions, remove the new client secret, remove the rogue service principle owner from the legacy app
-Force password update on the phishing victim
-Enact alerting on new client secret provisioning, app registration, redirect configuration
-Change default setting to disable app registration for all users.
-Conduct employee training
+3. Force password update on the phishing victim
+4. Enact alerting on new client secret provisioning, app registration, redirect configuration
+5. Change default setting to disable app registration for all users.
+6. Conduct employee training
 
 ## What I learned
 1. That IAM within organizations need to scheduled reviews of established users and applications to clean up old and/or unnecessary access and entitlements
 2. I learned how relaxed or rushed security standards on what appear to be small risks can actually carry significant impact radius by exploiting overlooked or unmanaged access.
-The default setting for all users being able to register an app is something that should be on any cloud security team's checklist to create and enforce policy which requires inspection and approval.
+3. The default setting for all users being able to register an app is something that should be on any cloud security team's checklist to create and enforce policy which requires inspection and approval.
 4. Additional navigation of the Azure system
